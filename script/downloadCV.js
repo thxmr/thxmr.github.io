@@ -1,11 +1,9 @@
 $(document).ready(function()
 {
-    if($("#hide")[0].style.display=="flex")
+    let displayed = false;
+    if(displayed)
     {
-        $("#hide")[0].style.display="none";
-        $("body")[0].overflowY="scroll";
-        $("#left-arrow").show();
-        $("#page2").hide();
+        window.location.reload(true);
     }
     $("#download").on("click",function(){
         $("#hide")[0].style.display="flex";
@@ -23,6 +21,7 @@ $(document).ready(function()
           };
         html2pdf().from(cv).set(opt).save();
         html2pdf(cv,opt);
+        displayed=true;
     });
    
 });
