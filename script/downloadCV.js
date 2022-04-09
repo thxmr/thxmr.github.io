@@ -1,5 +1,6 @@
 $(document).ready(function()
 {
+    console.log(displayed);
     let displayed = false;
     if(displayed)
     {
