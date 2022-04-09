@@ -79,3 +79,17 @@ ul{
 }
 
 .skill_icon{width:25px;}
+
+#hide{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    top:0;
+    font-size:36px;
+    display:none;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    background-color:gray;
+}
