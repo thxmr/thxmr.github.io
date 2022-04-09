@@ -1,8 +1,14 @@
 $(document).ready(function()
 {
+    if($("#hide")[0].style.display=="flex")
+    {
+        $("#hide")[0].style.display="none";
+        $("body")[0].overflowY="scroll";
+        $("#left-arrow").show();
+        $("#page2").hide();
+    }
     $("#download").on("click",function(){
         $("#hide")[0].style.display="flex";
-        $("#hide")[0].innerHTML="PDF en cours de téléchargement...";
         $("body")[0].style.overflowY="hidden";
         $("#left-arrow,#right-arrow").hide();
         $("#page1,#page2").show();
@@ -19,5 +25,4 @@ $(document).ready(function()
         html2pdf(cv,opt);
     });
    
-    
 });
