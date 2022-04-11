@@ -1,10 +1,5 @@
 $(document).ready(function()
 {
-    let displayed = false;
-    if(displayed)
-    {
-        window.location.reload(true);
-    }
     $("#download").on("click",function(){
         $("#hide")[0].style.display="flex";
         $("body")[0].style.overflowY="hidden";
