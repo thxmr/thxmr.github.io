@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
-    console.log(displayed);
     let displayed = false;
+    console.log(displayed);
     if(displayed)
     {
         window.location.reload(true);
